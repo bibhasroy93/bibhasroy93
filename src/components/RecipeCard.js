@@ -13,7 +13,7 @@ const RecipeCard = () => {
         data={recipeList}
         renderItem={({ item }) => (
           <Pressable 
-          onPress={()=>navigation.navigate("RecipeDetails")}
+          onPress={()=>navigation.navigate("RecipeDetails",{item:item})}
             style={{
               backgroundColor: colors.COLOR_LIGHT,
               borderRadius: 16,
