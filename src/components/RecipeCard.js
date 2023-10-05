@@ -25,6 +25,7 @@ const RecipeCard = () => {
               alignItems:"center",
               paddingHorizontal:8,
               paddingVertical:26,
+              elevation:3,
             }}
           >
             <Image source={item.image} 

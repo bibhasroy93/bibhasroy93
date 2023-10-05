@@ -17,6 +17,7 @@ const SearchFilter = ({icon, placeholder}) => {
         shadowOffset:{width:0, height:4},
         shadowOpacity:0.1,
         shadowRadius:7,
+        elevation:3,
     }}>
 
         <FontAwesome name={icon} size={20} color="#f96163" />

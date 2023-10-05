@@ -1,44 +1,51 @@
-import React from 'react'
-import { StyleSheet,View, Text, Image, TouchableOpacity } from 'react-native'
+import React from "react";
+import { StyleSheet, View, Text, Image, TouchableOpacity } from "react-native";
 
-const WelcomeScreen = ({navigation}) => {
+const WelcomeScreen = ({ navigation }) => {
   return (
-    <View style={{flex:1, alignItems:"center"}}>
-        <Image source={require("../../assets/images/welcome1.png")} />
+    <View style={{ flex: 1, alignItems: "center" }}>
+      <Image source={require("../../assets/images/welcome1.png")} />
 
-        <Text style={{color:"#f96163", fontSize:22, fontWeight:"bold"}}>
-          40+ Premium Recipes
-        </Text>
+      <Text style={{ color: "#f96163", fontSize: 22, fontWeight: "bold" }}>
+        40+ Premium Recipes
+      </Text>
 
-        <Text 
+      <Text
         style={{
           fontSize: 42,
-          fontWeight:"bold",
+          fontWeight: "bold",
           color: "#3c444c",
-          marginTop:44,
-          marginBottom:40,
-        }}>
-          Cook Like A Chef
-        </Text>
+          marginTop: 44,
+          marginBottom: 40,
+        }}
+      >
+        Cook Like A Chef
+      </Text>
 
-        <TouchableOpacity 
-        onPress={()=>navigation.navigate("RecipeList")}
+      <TouchableOpacity
+        onPress={() => navigation.navigate("RecipeList")}
         style={{
-          backgroundColor:"#f96163",
-          borderRadius:18,
-          paddingVertical:18,
-          width:"80%",
-          alignItems:"center",
+          backgroundColor: "#f96163",
+                borderRadius: 18,
+                paddingVertical: 18,
+                width: "80%",
+                alignItems: "center",
+                shadowColor: "#000",
+                shadowOffset: { width: 0, height: 4 },
+                shadowOpacity: 0.1,
+                shadowRadius: 7,
+                elevation:3,
         }}>
-          <Text styles={{fontSize:18, color:"#fff", fontWeight:"700"}}>
-            Let's Go
-          </Text>
-        </TouchableOpacity>
+        <Text style={styles.steelblue}>Let's Go</Text>
+      </TouchableOpacity>
     </View>
-    
-  )
-}
+  );
+};
 
-export default WelcomeScreen
+export default WelcomeScreen;
 
-const styles=StyleSheet.create({});
+const styles = StyleSheet.create({
+  steelblue: {
+    color: "#fff",
+  },
+});

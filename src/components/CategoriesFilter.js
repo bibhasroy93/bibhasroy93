@@ -21,6 +21,7 @@ const CategoriesFilter = () => {
                 shadowOpacity: 0.1,
                 shadowRadius: 7,
                 marginVertical:16,
+                elevation:3,
               }}
             >
               <Text style={{color:index===0 && colors.COLOR_LIGHT, fontSize:18}}>{category.category}</Text>
